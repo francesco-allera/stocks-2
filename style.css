@@ -1,0 +1,44 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html, body, #app {
+   background: #000;
+   width: 100%;
+   height: 100%;
+}
+
+#app {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#chartContainer {
+   background: #e1e1e1;
+   width: 100%;
+   height: calc(100% - 2rem);
+}
+
+#selects {
+   line-height: 2rem;
+}
+
+select, option {
+   text-transform: uppercase;
+}
+
+label {
+   color: #fff;
+   text-transform: uppercase;
+}
+
+label::before {
+   content: "Choose a ";
+}
+
+label::after {
+   content: ":";
+}
